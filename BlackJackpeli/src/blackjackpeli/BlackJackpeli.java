@@ -9,5 +9,6 @@ public class BlackJackpeli {
             pakka.addkortti("risti", i);
             pakka.addkortti("pata", i);
         }
+        
     }
 }
