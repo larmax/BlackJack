@@ -6,4 +6,10 @@ public class Korttipakka {
         String kortti = maa+arvo;
         Korttipakka.add(kortti);
     }
+    void remkortti(String kortti){
+        String tkortti = "";
+        for(int i = 0;i<=Korttipakka.size();i++){
+            
+        }
+    }
 }
