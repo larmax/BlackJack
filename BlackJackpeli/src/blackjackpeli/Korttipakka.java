@@ -35,4 +35,12 @@ public class Korttipakka {
         }
         return "";
     }
+    public Korttipakka(){
+        for(int i = 1;i<=13;i++){
+            this.addkortti("hertta", i);
+            this.addkortti("ruutu", i);
+            this.addkortti("risti", i);
+            this.addkortti("pata", i);
+        }
+    }
 }
