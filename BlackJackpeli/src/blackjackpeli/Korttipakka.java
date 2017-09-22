@@ -35,6 +35,12 @@ public class Korttipakka {
         }
         return "";
     }
+    public void sekoita(){
+        Collections.shuffle(Korttipakka);
+    }
+    public ArrayList palauta(){
+        return Korttipakka;
+    }
     public Korttipakka(){
         for(int i = 1;i<=13;i++){
             this.addkortti("hertta", i);
