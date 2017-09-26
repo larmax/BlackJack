@@ -1,13 +1,13 @@
 package blackjackpeli;
 
-public class Kortit {
+public class Kortti {
     private String maa;
     private int arvo;
     
     
     
 
-public Kortit(int arvo, String maa) {
+public Kortti(int arvo, String maa) {
     this.maa = maa;
     this.arvo = arvo;
       }

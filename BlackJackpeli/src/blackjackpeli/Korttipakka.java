@@ -47,6 +47,11 @@ public class Korttipakka {
             this.addkortti("ruutu", i);
             this.addkortti("risti", i);
             this.addkortti("pata", i);
+        
         }
+    
     }
+public List<String> getKortit() {
+    return Korttipakka;
+}
 }

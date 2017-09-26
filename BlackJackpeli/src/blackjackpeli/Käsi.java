@@ -6,18 +6,14 @@ import java.util.*;
 
 
 public class Käsi {
-    
-ArrayList pelaajankäsi = new ArrayList();
+    private Korttipakka pakkakortti;
+    private ArrayList pelaajankäsi = new ArrayList();
 
-public void(String jotai){
-    
+public void k(){
+    pakkakortti = new Korttipakka();
 }
-
-
-public static void otaKortti(ArrayList<String> Kortit){
-   
-    
-    
+public void otaKortti(String kortti){
+    String jaettavakortti = pakkakortti.getkortti(kortti);
 }
 public static void selvitäSumma(){
     
