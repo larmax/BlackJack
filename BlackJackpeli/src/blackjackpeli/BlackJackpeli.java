@@ -17,6 +17,8 @@ public class BlackJackpeli {
                     }
                 }
             }
-        else{System.out.println("haist vittu sit. >:C");}
+            else{
+                System.out.println("haist vittu sit. >:C");
+        }
     }
 }
