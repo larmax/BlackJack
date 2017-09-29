@@ -12,13 +12,16 @@ public class BlackJackpeli {
                     System.out.println("Haluatko kortin?");
                     String vast = pena.nextLine();
                     if(vast.equals("joo")){
-                        pakka.sekoita();
                         String jaettavakortti = pakka.getKortit().get(0);
                         pakka.remkortti(jaettavakortti);
                         pkasi.otaKortti(jaettavakortti);
                         String pelaajanpakka = pkasi.getPelaajanKortit();
                         System.out.println(pelaajanpakka);
-                        pkasi.selvitäSumma();
+                        int summa = pkasi.selvitäSumma();
+                        System.out.println(summa);
+                        if(summa > 21){
+                            System.out.println("hävisit. Parempi onnni ensi kerralla");
+                        }
                     }
                     else if(vast.equals("ei")){
                         System.out.println("ei sit");

@@ -8,7 +8,7 @@ public class Korttipakka {
     }
     public void remkortti(String kortti){
         String tkortti = "";
-        for(int i = 0;i<=Korttipakka.size();i++){
+        for(int i = 0;i<Korttipakka.size();i++){
             tkortti = Korttipakka.get(i).toString();
             if(tkortti.equals(kortti)){
                 Korttipakka.remove(i);
@@ -17,7 +17,7 @@ public class Korttipakka {
     }
     public boolean checkkortti(String kortti){
         String tkortti = "";
-        for(int i = 0;i<=Korttipakka.size();i++){
+        for(int i = 0;i<Korttipakka.size();i++){
             tkortti = Korttipakka.get(i).toString();
             if(tkortti.equals(kortti)){
                 return true;
@@ -27,7 +27,7 @@ public class Korttipakka {
     }
     public String getkortti(String kortti){
         String tkortti = "";
-        for(int i = 0;i<=Korttipakka.size();i++){
+        for(int i = 0;i<Korttipakka.size();i++){
             tkortti = Korttipakka.get(i).toString();
             if(tkortti.equals(kortti)){
                 return tkortti;
