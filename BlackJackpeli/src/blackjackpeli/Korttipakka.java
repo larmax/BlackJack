@@ -51,7 +51,7 @@ public class Korttipakka {
         }
     
     }
-public List<String> getKortit() {
-    return Korttipakka;
-}
+    public List<String> getKortit() {
+        return Korttipakka;
+    }
 }
