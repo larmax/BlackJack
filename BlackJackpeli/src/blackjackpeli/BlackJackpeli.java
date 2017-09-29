@@ -11,6 +11,7 @@ public class BlackJackpeli {
                     System.out.println("Haluatko kortin?");
                     String vast = pena.nextLine();
                     if(vast.equals("joo")){
+                        System.out.println(kortti()); 
                     }
                     else if(vast.equals("ei")){
                         System.out.println("ei sit");
