@@ -15,6 +15,7 @@ public class BlackJackpeli {
                         pakka.sekoita();
                         String jaettavakortti = pakka.getKortit().get(0);
                         pakka.remkortti(jaettavakortti);
+                        pkasi.otaKortti(jaettavakortti);
                         String pelaajanpakka = pkasi.getPelaajanKortit();
                         System.out.println(pelaajanpakka);
                     }
