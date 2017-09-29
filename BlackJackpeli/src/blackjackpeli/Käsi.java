@@ -9,7 +9,7 @@ public void k(){
     pakkakortti = new Korttipakka();
 }
 public void otaKortti(String kortti){
-    String jaettavakortti = pakkakortti.getkortti(kortti);
+    pelaajankäsi.add(kortti);
 }
 public String getPelaajanKortit() {
     String kortti = pelaajankäsi.get(0).toString();
