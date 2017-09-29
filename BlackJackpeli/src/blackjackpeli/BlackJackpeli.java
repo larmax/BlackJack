@@ -2,13 +2,16 @@ package blackjackpeli;
 import java.util.*;
 public class BlackJackpeli {
     public static void main(String[] args) {
+        int pisteet;
         Käsi pkasi = new Käsi();
         Korttipakka pakka = new Korttipakka();
         Scanner pena = new Scanner(System.in);
         System.out.println("haluatko pelata?");
             String vast1 = pena.nextLine();
             if(vast1.equals("joo")){
+                 
                 while(true){
+                    int summa;
                     System.out.println("Haluatko kortin?");
                     String vast = pena.nextLine();
                     if(vast.equals("joo")){
@@ -17,10 +20,11 @@ public class BlackJackpeli {
                         pkasi.otaKortti(jaettavakortti);
                         String pelaajanpakka = pkasi.getPelaajanKortit();
                         System.out.println(pelaajanpakka);
-                        int summa = pkasi.selvitäSumma();
+                        summa = pkasi.selvitäSumma();
                         System.out.println(summa);
                         if(summa > 21){
                             System.out.println("hävisit. Parempi onnni ensi kerralla");
+                            break;
                         }
                     }
                     else if(vast.equals("ei")){
