@@ -18,6 +18,7 @@ public class BlackJackpeli {
                         pkasi.otaKortti(jaettavakortti);
                         String pelaajanpakka = pkasi.getPelaajanKortit();
                         System.out.println(pelaajanpakka);
+                        
                     }
                     else if(vast.equals("ei")){
                         System.out.println("ei sit");

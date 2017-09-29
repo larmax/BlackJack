@@ -15,8 +15,14 @@ public String getPelaajanKortit() {
     String kortti = pelaajankäsi.get(0).toString();
     return kortti;
 }
-public static void selvitäSumma(){
-    
+public void selvitäSumma(){
+  int sum = 0;
+
+//for(String kortti:pelaajankäsi.toString()){
+  for(int i = 0;i<=pelaajankäsi.size();i++){
+      System.out.println("moi");
+
 }
 
+}
 }
