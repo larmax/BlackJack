@@ -22,6 +22,7 @@ public class BlackJackpeli {
                     }
                     else if(vast.equals("ei")){
                         System.out.println("ei sit");
+                        break;
                     }
                 }
             }
