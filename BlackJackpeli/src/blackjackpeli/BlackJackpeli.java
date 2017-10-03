@@ -47,6 +47,14 @@ public class BlackJackpeli {
                         }
                         System.out.println("ja niiden yhteisarvo on: ");
                         System.out.println(esumma);
+                        
+                        int psumma = pkasi.selvitäSumma();
+                        if(esumma>21 || psumma>esumma){
+                            System.out.println("voitit! :D");
+                        }
+                        else if(esumma<=21 && esumma>psumma){
+                            System.out.println("emäntä voittaa!");
+                        }
                         break;
                     }
                 }
