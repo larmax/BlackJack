@@ -12,12 +12,11 @@ public void otaKortti(String kortti){
     this.pelaajankäsi.add(kortti);
 }
 public String getPelaajanKortit() {
-    String kortti = pelaajankäsi.get(0).toString();
+    String kortti = pelaajankäsi.get(pelaajankäsi.size()-1).toString();
     return kortti;
 }
 public int selvitäSumma(){
   int sum = 0;
-
 //for(String kortti:pelaajankäsi.toString()){
   for(int i = 0;i< pelaajankäsi.size();i++){
       String tar = pelaajankäsi.get(i).toString();
