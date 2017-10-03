@@ -15,6 +15,7 @@ public class BlackJackpeli {
                     System.out.println("Haluatko kortin?");
                     String vast = pena.nextLine();
                     if(vast.equals("joo")){
+                        pakka.sekoita();
                         String jaettavakortti = pakka.getKortit().get(0);
                         pakka.remkortti(jaettavakortti);
                         pkasi.otaKortti(jaettavakortti);
