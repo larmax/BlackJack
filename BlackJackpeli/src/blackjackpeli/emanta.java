@@ -11,7 +11,7 @@ public void otaKortti(Kortti kortti){
         for(int i = 0;i< emannankäsi.size();i++){
             kortti =  emannankäsi.get(i);
             if(kortti.equals(kortti)){
-                 emannankäsi.remove(i);
+            //     emannankäsi.remove(i);
 }
 }
 }

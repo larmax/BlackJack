@@ -31,7 +31,7 @@ public class Korttipakka {
             this.addkortti(new Kortti(ii, "ruutu"));
          this.addkortti(new Kortti(ii, "risti"));
         this.addkortti(new Kortti(ii, "pata"));
-           
+         
         
         }
     

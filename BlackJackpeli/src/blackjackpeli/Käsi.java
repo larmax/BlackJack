@@ -12,7 +12,7 @@ public class Käsi {
         for (int i = 0; i < pelaajankäsi.size(); i++) {
             kortti = pelaajankäsi.get(i);
             if (kortti.equals(kortti)) {
-                pelaajankäsi.remove(i);
+              //  pelaajankäsi.remove(i);
 
             }
         }

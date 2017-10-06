@@ -10,12 +10,12 @@ public class BlackJackpeli {
         emanta ekasi = new emanta();
 
         Scanner pena = new Scanner(System.in);
-        System.out.println("haluatko pelata?");
+         System.out.println("haluatko pelata?");
         String vast1 = pena.nextLine();
         System.out.println("Monta pakkaa haluat peliin?");
         int vast2 = pena.nextInt();
         Korttipakka pakka = new Korttipakka(vast2);
-        if (vast1.equals("joo")) {
+        if (vast1.equals("kylla")) {
 
             while (true) {
                 int summa;
@@ -36,9 +36,8 @@ public class BlackJackpeli {
                     }
                 } else if (vast.equals("ei")) {
 
-                    System.out.println("ei sit");
-                    System.out.println("nyt on sitten emännän vuoro:");
-                    System.out.println("emäntä sai seuraavat kortit: ");
+               
+              
                     int esumma = 0;
                     while (esumma <= 17) {
                         Kortti jaettavakortti = pakka.getKortit().get(0);
@@ -47,11 +46,13 @@ public class BlackJackpeli {
                         ekasi.otaKortti(jaettavakortti);
                         esumma = ekasi.selvitäSumma();
                         Kortti ekortti = ekasi.getEmannanKortit();
+                    
                         System.out.println(ekortti);
+                    
                     }
                     System.out.println("ja niiden yhteisarvo on: ");
-                    System.out.println(esumma);
-
+                       System.out.println("nyt on sitten emännän vuoro:");
+                    System.out.println("emäntä sai seuraavat kortit: "+esumma);
                     int psumma = pkasi.selvitaSumma();
                     if (esumma > 21 || psumma > esumma) {
                         System.out.println("voitit! :D");
