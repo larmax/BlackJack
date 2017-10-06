@@ -27,7 +27,7 @@ public class BlackJackpeli {
                     //  pakka.remkortti(jaettavakortti);
                     pkasi.otaKortti(jaettavakortti);
                     System.out.println(pkasi);
-                    summa = pkasi.selvitäSumma();
+                    summa = pkasi.selvitaSumma();
                     System.out.println(summa);
                     pisteet = summa;
                     if (summa > 21) {
@@ -46,13 +46,13 @@ public class BlackJackpeli {
                         //  pakka.remkortti(jaettavakortti);
                         ekasi.otaKortti(jaettavakortti);
                         esumma = ekasi.selvitäSumma();
-                        String ekortti = ekasi.getEmannanKortit();
+                        Kortti ekortti = ekasi.getEmannanKortit();
                         System.out.println(ekortti);
                     }
                     System.out.println("ja niiden yhteisarvo on: ");
                     System.out.println(esumma);
 
-                    int psumma = pkasi.selvitäSumma();
+                    int psumma = pkasi.selvitaSumma();
                     if (esumma > 21 || psumma > esumma) {
                         System.out.println("voitit! :D");
                     } else if (esumma <= 21 && esumma > psumma) {

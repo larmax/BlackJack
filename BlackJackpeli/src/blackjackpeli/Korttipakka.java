@@ -8,9 +8,9 @@ public class Korttipakka {
     }
     
     public void otaKortti(Kortti kortti){
-        String tkortti = "";
+        Kortti tkortti;
         for(int i = 0;i<Korttipakka.size();i++){
-            tkortti = Korttipakka.get(i).toString();
+            tkortti = Korttipakka.get(i);
             if(tkortti.equals(kortti)){
                 Korttipakka.remove(i);
             }
