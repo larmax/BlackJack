@@ -20,7 +20,7 @@ public class Käsi {
 
 
 
-    public int selvitäSumma() {
+    public int selvitaSumma() {
         int sum = 0;
 //for(String kortti:pelaajankäsi.toString()){
         for (int i = 0; i < pelaajankäsi.size(); i++) {

@@ -16,8 +16,8 @@ public void otaKortti(Kortti kortti){
 }
 }
 
-public String getEmannanKortit() {
-    String kortti = emannankäsi.get(emannankäsi.size()-1).toString();
+public Kortti getEmannanKortit() {
+    Kortti kortti = emannankäsi.get(emannankäsi.size()-1);
     return kortti;
 }
 public int selvitäSumma(){
