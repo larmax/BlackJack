@@ -11,13 +11,13 @@ public class Käsi {
         this.pelaajankäsi.add(kortti);
         for (int i = 0; i < pelaajankäsi.size(); i++) {
             kortti = pelaajankäsi.get(i);
-<<<<<<< HEAD
+
             if (kortti.equals(kortti)) {
               //  pelaajankäsi.remove(i);
-=======
+
            // if (kortti.equals(kortti)) {
             //    pelaajankäsi.remove(i);
->>>>>>> da4df5d0f3239d90dd132df73565d85ea4a2f4db
+
 
             //}
         }
