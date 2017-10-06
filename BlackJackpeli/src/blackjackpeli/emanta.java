@@ -2,15 +2,20 @@
 package blackjackpeli;
 import java.util.*;
 public class emanta {
-    private Korttipakka pakkakortti;
-    private ArrayList emannankäsi = new ArrayList();
+      private ArrayList <Kortti> emannankäsi = new ArrayList();
 
-public void k(){
-    pakkakortti = new Korttipakka();
+
+
+public void otaKortti(Kortti kortti){
+     this. emannankäsi.add(kortti);
+        for(int i = 0;i< emannankäsi.size();i++){
+            kortti =  emannankäsi.get(i);
+            if(kortti.equals(kortti)){
+                 emannankäsi.remove(i);
 }
-public void otaKortti(String kortti){
-    this.emannankäsi.add(kortti);
 }
+}
+
 public String getEmannanKortit() {
     String kortti = emannankäsi.get(emannankäsi.size()-1).toString();
     return kortti;
