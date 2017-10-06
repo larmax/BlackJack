@@ -7,15 +7,15 @@ public class Korttipakka {
         Korttipakka.add(kortti);
     }
     
-    public void otaKortti(Kortti kortti){
-        Kortti tkortti;
+    public Kortti otaKortti(Kortti kortti){
+        Kortti tkortti = null;
         for(int i = 0;i<Korttipakka.size();i++){
             tkortti = Korttipakka.get(i);
-            if(tkortti.equals(kortti)){
-                Korttipakka.remove(i);
+          //  if(tkortti.equals(kortti)){
+            //    Korttipakka.remove(i);
             }
-        }
-    
+      //  }
+    return tkortti;
     }
     public void sekoita(){
         Collections.shuffle(Korttipakka);
@@ -36,6 +36,7 @@ public class Korttipakka {
         }
     
     }
+        
     }
     public List<Kortti> getKortit() {
         return Korttipakka;
