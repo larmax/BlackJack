@@ -17,9 +17,9 @@ public class BlackJackpeli {
         Korttipakka pakka = new Korttipakka(vast2);
         if (vast1.equals("kylla")) {
 
-            while (true) {
-                int summa;
+            while (true) {            
                 System.out.println("Haluatko kortin?");
+                int summa;
                 String vast = pena.nextLine();
                 if (vast.equals("joo")) {
                     pakka.sekoita();

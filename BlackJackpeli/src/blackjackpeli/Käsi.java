@@ -12,10 +12,9 @@ public class Käsi {
         for (int i = 0; i < pelaajankäsi.size(); i++) {
             kortti = pelaajankäsi.get(i);
 
-            if (kortti.equals(kortti)) {
-              //  pelaajankäsi.remove(i);
+            
 
-           // if (kortti.equals(kortti)) {
+            if (kortti.equals(kortti)) {
             //    pelaajankäsi.remove(i);
 
 
@@ -23,8 +22,9 @@ public class Käsi {
         }
     }
 
-
-
+        
+        
+    }
     public int selvitaSumma() {
         int sum = 0;
 //for(String kortti:pelaajankäsi.toString()){
@@ -48,3 +48,4 @@ public class Käsi {
         return "" + this.pelaajankäsi;
     }
 }
+
