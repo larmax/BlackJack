@@ -12,23 +12,24 @@ public class BlackJackpeli {
         Scanner pena = new Scanner(System.in);
          System.out.println("haluatko pelata?");
         String vast1 = pena.nextLine();
-        System.out.println("Monta pakkaa haluat peliin?");
-        int vast2 = pena.nextInt();
+        
+        
+        if (vast1.equals("joo")) {
+            System.out.println("Monta pakkaa haluat peliin?");
+int vast2 = pena.nextInt();
         Korttipakka pakka = new Korttipakka(vast2);
-        if (vast1.equals("kylla")) {
-
-            while (true) {            
-                System.out.println("Haluatko kortin?");
+            while (true) {
                 int summa;
+                System.out.println("Haluatko kortin?");
                 String vast = pena.nextLine();
                 if (vast.equals("joo")) {
                     pakka.sekoita();
                     Kortti jaettavakortti = pakka.getKortit().get(0);
                     //  pakka.remkortti(jaettavakortti);
                     pkasi.otaKortti(jaettavakortti);
-                    System.out.println(pkasi);
+                    System.out.print(pkasi);
                     summa = pkasi.selvitaSumma();
-                    System.out.println(summa);
+                    System.out.println("Korttien summa on"+summa);
                     pisteet = summa;
                     if (summa > 21) {
                         System.out.println("hävisit. Parempi onnni ensi kerralla");
