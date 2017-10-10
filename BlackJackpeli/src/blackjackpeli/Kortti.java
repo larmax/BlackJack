@@ -29,7 +29,7 @@ public Kortti(int arvo, String maa) {
     
     @Override
     public String toString(){
-        return "arvo:"+this.arvo+"\nmaa: "+this.maa;
+        return "arvo:"+this.arvo+" maa: "+this.maa;
     }
     
     
